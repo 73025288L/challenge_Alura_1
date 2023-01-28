@@ -1,0 +1,214 @@
+/*Propiedades personalizadas*/
+:root {
+   --fuenteHeading: "PT Sans", sans-serif;
+   --fuenteParrafos: "Open Sans", sans-serif;
+   --primario: #f3f5fc;
+   --blanco: #ffffff;
+   --azul: #0a3871;
+   --negro: #000000;
+   --verde: #3ead47;
+   --violeta: #242026;
+   --maleficio: #8f7cec;
+}
+
+body {
+   font-family: var(--fuenteHeading);
+   font-size: 1.6rem;
+   line-height: 2;
+   background-color: var(--primario);
+}
+
+.contenedor {
+   max-width: 120rem;
+   width: 90%;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-family: var(--fuenteHeading);
+   line-height: 1.2;
+}
+
+h1 {
+   font-size: 4.8rem;
+}
+h2 {
+   font-size: 4rem;
+}
+h3 {
+   font-size: 3.2rem;
+}
+h4 {
+   font-size: 2.8rem;
+}
+img {
+   max-width: 100%;
+}
+
+.no-margin {
+   margin: 0;
+}
+.no-padding {
+   padding: 0;
+}
+.centrar-texto {
+   text-align: center;
+}
+
+/***************************************************************************HEADER************************************************************************************/
+.logo {
+   position: absolute;
+   left: 5%;
+   top: 10%;
+   cursor: pointer;
+}
+
+/***************************************************************************MAIN************************************************************************************/
+
+main {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   gap: 2rem;
+}
+
+.izquierda {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   gap: 15rem;
+}
+
+i,
+span {
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+i {
+   margin-left: 3rem;
+}
+
+.cuadro-texto form input[type="text"] {
+   width: 40rem;
+   height: 4.8rem;
+   margin-top: 15rem;
+   margin-left: 15rem;
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 3.2rem;
+   line-height: 4.8rem;
+   color: #0a3871;
+   border: none;
+   background-color: var(--primario);
+}
+
+.muneco {
+   background-color: var(--blanco);
+   width: 30%;
+
+   box-shadow: 0 2.4rem 3.2rem -8px rgba(0, 0, 0, 0.8);
+   border-radius: 3.2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.muneco img {
+   width: 80%;
+}
+
+.muneco .muneco-caja {
+   width: 90%;
+}
+
+.muneco .muneco-caja .muneco-titulo {
+   font-weight: 700;
+   font-style: normal;
+   font-size: 2.4rem;
+   line-height: 120%;
+   text-align: center;
+   color: #343a40;
+}
+
+.muneco .muneco-caja .muneco-subtitulo {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: #495057;
+   text-align: center;
+}
+
+.botones {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 1rem;
+   padding: 2.4rem;
+   padding-top: 0;
+   padding-bottom: 0;
+}
+.btn {
+   width: 20rem;
+   height: 5rem;
+   border-radius: 1rem;
+   font-size: 1.8rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.9rem;
+   text-align: center;
+   cursor: pointer;
+}
+
+.encriptar {
+   background-color: #0a3871;
+   color: white;
+}
+
+.desencriptar {
+   background-color: var(--violeta);
+   color: white;
+}
+
+.muneco .muneco-boton {
+   width: 10rem;
+   height: 2.5rem;
+   border-radius: 0.5rem;
+   font-size: 1.2rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.2rem;
+   text-align: center;
+   cursor: pointer;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   background-color: var(--maleficio);
+}
+
+.muneco-caja-texto {
+   width: 80%;
+   height: 100%;
+   margin: 2rem;
+   height: inherit;
+   border: none;
+   font-size: 2rem;
+   color: var(--azul);
+   font-style: italic;
+}
+.invisible {
+   visibility: hidden;
+}
+/***************************************************************************FOOTER************************************************************************************/

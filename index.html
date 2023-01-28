@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/styles.css" />
+      <script
+         src="https://kit.fontawesome.com/60b8e09f5c.js"
+         crossorigin="anonymous"
+      ></script>
+      <title>Challenge 1</title>
+   </head>
+   <body>
+      <main>
+         <div class="izquierda">
+            <div class="logo">
+               <img src="img/Logo.png" alt="logo a" />
+            </div>
+
+            <div class="cuadro-texto">
+               <form action="">
+                  <input type="text" class="input-texto" placeholder="Ingrese texto aqui" />
+               </form>
+            </div>
+            <div>
+            <i class="fa-solid fa-circle-exclamation"></i>
+               <span class="texto">Solo letras minusculas y sin acentos</sapn>
+               <div class="botones">
+                  <button class="btn encriptar"  onclick="encriptar()"   >Encriptar</button>
+                  <button class="btn desencriptar " onclick="desencriptar()">Desencriptar</button>
+               </div>
+            </div>
+         </div>
+
+
+
+
+         <div class="muneco">
+            <img src="img/Muñeco.png" alt="muñeco" class="muneco-imagen" />
+            <div class="muneco-caja">
+               <p class="muneco-titulo">Ningun mensaje fue encontrado</p>
+               <p class="muneco-subtitulo">
+                  Ingrese el texto que desees encriptar o desencriptar
+               </p>
+            </div>
+            <textarea class="invisible muneco-caja-texto" id="invisible" disabled></textarea>
+            <button id="copiar" type="button" name="button" class=" muneco-boton" onclick="copiar()">¡Copiar!</button>
+         </div>
+      </main>
+
+      <script src="js/scripts.js"></script>
+   </body>
+</html>
